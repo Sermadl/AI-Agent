@@ -50,9 +50,9 @@
 | Agent 4<br>보고서 생성 | Agent 3의 예측 결과를 바탕으로 보고서 구성용 텍스트 | Markdown 형식의 최종 기술 트렌드 보고서 |
 
 ## Architecture
-
-
-
+<p align="center">
+<img src = "https://github.com/user-attachments/assets/67e703fc-1171-4444-99f8-8a3d6ed4b3ce" width="45%" height="45%">
+</p>
 ## Directory Structure
 
 ```
