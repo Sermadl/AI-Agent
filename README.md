@@ -53,6 +53,7 @@
 <p align="center">
 <img src = "./graph.png" width="25%">
 </p>
+
 ## Directory Structure
 
 ```
@@ -63,6 +64,29 @@
 ├── .env                   # 깃에는 없음
 ├── .gitignore             # 깃 설정 파일
 └── README.md
+```
+
+## Setup & Installation
+
+1. 가상환경 설정
+
+```shell
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+2. API 키 설정
+
+```shell
+cp .env.example .env
+# .env 파일에 필요한 API 키 입력
+```
+
+3. 실행
+
+```shell
+python app.py
 ```
 
 ## Contributors
