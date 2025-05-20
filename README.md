@@ -51,7 +51,7 @@
 
 ## Architecture
 <p align="center">
-<img src = "https://github.com/user-attachments/assets/d19a3264-6182-4408-aaaf-fe8ea3d1b748" width="25%">
+<img src = "./graph.png" width="25%">
 </p>
 ## Directory Structure
 
