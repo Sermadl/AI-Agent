@@ -1,0 +1,6 @@
+langchain_openai
+langchain-community
+langgraph
+tavily-python
+markdown
+weasyprint
