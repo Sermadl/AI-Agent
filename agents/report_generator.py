@@ -20,6 +20,8 @@ output_parser = StrOutputParser()
 chain = prompt | llm | output_parser
 
 def generate_report(keyword, trend_summary, trend_predict):
+    print("4. 보고서를 생성하는 중입니다...\n")
+
     result = chain.invoke({
         "keyword": keyword,
         "trend_summary": trend_summary,
@@ -27,6 +29,9 @@ def generate_report(keyword, trend_summary, trend_predict):
     })
 
     markdown_to_pdf(result, f"/Users/serma/Documents/skala/AI_Agent_Project/ai_mini_design_11_3반_김세은/code/output/{keyword}_미래_기술_트렌드_분석_보고서.pdf")
+
+    print("\n 보고서 생성 완료!\n")
+
 
 def markdown_to_pdf(md_text, output_pdf_path):
     # 마크다운을 HTML로 변환

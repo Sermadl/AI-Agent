@@ -35,6 +35,8 @@ def search_patents_by_keyword(keyword):
     Returns:
         dict: 검색 결과(JSON)
     """
+    print(f"1. '{keyword}'에 대한 정보를 수집하는 중입니다...\n")
+
     payload = {
         "query": {
             "bool": {
@@ -61,6 +63,8 @@ def search_patents_by_keyword(keyword):
 
     patents = requests.post(patent_url, headers=headers, data=json.dumps(payload))
     scholarly = requests.post(scholar_url, headers=headers, data=json.dumps(payload))
+
+    print("정보 수집 완료!\n")
 
     if patents.status_code == 200 and scholarly.status_code == 200:
         patents = patents.json()

@@ -25,11 +25,16 @@ format_instructions = output_parser.get_format_instructions()
 chain = prompt | llm | output_parser
 
 def summarize_trend(scholar_result, patent_result, tavily_result):
+    print("2. 수집된 정보를 바탕으로 기술 트렌드를 분석하는 중입니다...\n")
+
     trend_summary = chain.invoke({
         "format_instructions": format_instructions,
         "scholarly": scholar_result,
         "patents": patent_result,
         "tavily": tavily_result
     })
+
+    print(trend_summary)
+    print("\n수집된 정보 요약 완료!\n")
 
     return trend_summary
