@@ -5,8 +5,8 @@
 ## Overview
 
 - Objective : 최신 논문 및 뉴스 데이터를 바탕으로 미래 기술 트렌드를 자동으로 분석하고 예측하는 시스템 구축
-- Methods : Multi-Agent Orchestration, Retrieval-Augmented Generation
-- Tools : LangGraph, LangChain, Chroma, OpenAI GPT-4o-mini, Tavily, 논문/특허 검색 API
+- Methods : Multi-Agent Orchestration
+- Tools : LangGraph, LangChain, OpenAI GPT-4o-mini, Tavily, 논문/특허 검색 API(Lens)
 
 ## Features
 
